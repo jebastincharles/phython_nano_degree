@@ -12250,7 +12250,7 @@ The worth of home is higher is it follwing parameters as per above question</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>**Answer: Yes, this model is able to successfully capture the variation of the target variable. It has a R2 score of .923 which is almost 1, So it was able to predict depened variable valus from independent variable.</p>
+<p>**Answer: Yes, this model is able to successfully capture the variation of the target variable. It has a R2 score of .923 which is almost 1, So it was able to predict depened variable valus from independent variable. The R2 score is calculated by equation R2 = 1 - (mean square error of linear regression model / mean square modelerror of simple ). So as per the data given the value of R2 is near to 1 which implies mean square error of linear regression model is very low which turn the model as good model and it is able to find the variation of target variable.</p>
 
 </div>
 </div>
@@ -12408,7 +12408,7 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**Answer:  For the graph with max_depth = 3, the maxium depth of model is 0.8. It is clear that the model's testing score initially to a point where it reaches almost 0.8 then it is kind of constant. But for the testing score, this model made some initial error then able to generalize for the given testing data set. 
-If the training data set is increased , i.e if we train the model well then it should perform very good . SInce after 200 training points the curve almost moves along with test data. Yes if more training points are add it will benefit the model.</p>
+If the training data set is increased , i.e if we train the model well then it should perform very good . SInce after 200 training points the curve almost moves along with test data. No need to add more data , since after 300 the curve normalizes each other (almost in the same). If more and more training data has been added then model must not end up with high variance.</p>
 
 </div>
 </div>
@@ -12476,7 +12476,7 @@ If the training data set is increased , i.e if we train the model well then it s
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>  When the maximum depth of model is 1, then the model is high biased. Oversimplifying the complex problem.
-But if the model is trained with maximum depth of 10, then it sufferent from high variance. Since in high variance , the model overcomplecates a simple problem, which inturn the model behaves good in training set, the red line reaches almost 1 but it behaves badly with the validation test, i.e the green line is not moving towards score of 1. i.e it started decreasing.</p>
+But if the model is trained with maximum depth of 10, then it suffered from high variance. Since in high variance , the model overcomplicates a simple problem, which inturn the model behaves good in training set, the red line reaches almost 1 but it behaves badly with the validation test, i.e the green line is not moving towards score of 1. i.e it started decreasing.Both the lines are almost convererge when max depth is .7 or .8( around 1) , but at that time the training data is low, so the model will be able to genearalize the result which end up with high bias state.</p>
 
 </div>
 </div>
@@ -12530,7 +12530,7 @@ But if the model is trained with maximum depth of 10, then it sufferent from hig
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Grid search technique is technique used to tune a model to get optimal performation/prediction by setting some hyperparameter values as predefined. The hyper parameters values will be modified based on model output. K-fold cross validation is one of grid search technique where the test-data, cross validation-data and testing-data is seperated into k-buckets.And the model is trained with these buckets of data. The bucket size will be modified based on the learning of model.</p>
+<p><strong>Answer: </strong> Grid search is a model hyperparameter optimization technique. For few models we set the possible Grid values like an array. The model uses all of these pre-set hyperparamter and suggested the best parameter value where it yields good results. Then we use these model suggested hyper paramter values using K-fold cross validation to get more accurate output. K-fold cross validation is one of grid search technique where the test-data, cross validation-data and testing-data is seperated into k-buckets.And the model is trained with these buckets of data.</p>
 
 </div>
 </div>
